@@ -1,0 +1,4 @@
+
+exit
+
+sudo blkid
