@@ -6,6 +6,7 @@ sudo pacman --sync gnu-free-fonts
 sudo pacman --sync noto-fonts
 sudo pacman --sync ttf-dejavu
 sudo pacman --sync ttf-linux-libertine
+
 sudo pacman --sync ttf-opensans
 sudo pacman --sync ttf-roboto
 sudo pacman --sync ttf-roboto-mono

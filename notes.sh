@@ -17,3 +17,5 @@ $_
 !mk:2
 
 rename -vn from to pattern-*
+
+dircolors
