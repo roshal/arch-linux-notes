@@ -60,6 +60,7 @@ sudo pacman --sync openssh
 
 sudo pacman --sync yarn
 
+sudo pacman --sync qt5-wayland
 sudo pacman --sync telegram-desktop
 
 sudo pacman --sync terminator

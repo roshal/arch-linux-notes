@@ -33,7 +33,6 @@ cd nvm
 makepkg -si
 cd ..
 
-# go go-tools python-docutils
 git clone https://aur.archlinux.org/snapd.git
 cd snapd
 makepkg -si
