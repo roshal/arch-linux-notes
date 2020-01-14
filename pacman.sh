@@ -1,26 +1,54 @@
 
 exit
 
-sudo pacman -Q --query
-sudo pacman -R --remove
-sudo pacman -S --search
+# alias
 
-sudo pacman --query -d --deps
-sudo pacman --query -e --explicit
-sudo pacman --query -i --info base
-sudo pacman --query -m --foreign
-sudo pacman --query -q --quiet
-sudo pacman --query -t --unrequired
+alias pacman='sudo pacman --color always'
 
-sudo pacman --sync -s --search
-sudo pacman --sync -u --sysupgrade
-sudo pacman --sync -y --refresh
+# flags
 
-sudo pacman --remove -n --nosave
-sudo pacman --remove -s --recursive
+pacman -Q --query
+pacman -R --remove
+pacman -S --sync
 
-# get unused packages orphans
-sudo pacman --query -tdq
+pacman --query -i --info
+pacman --query -k --check
+pacman --query -l --list
+pacman --query -q --quiet
 
-# removing unused packages orphans
-sudo pacman --remove -ns `pacman --query -tdq`
+pacman --query -d --deps
+pacman --query -e --explicit
+pacman --query -m --foreign
+pacman --query -n --native
+pacman --query -t --unrequired
+pacman --query -u --upgrades
+
+pacman --remove -n --nosave
+pacman --remove -s --recursive
+
+pacman --sync -s --search
+pacman --sync -u --sysupgrade
+pacman --sync -y --refresh
+
+# commands
+
+# query check files
+pacman --query -kq
+
+# query foreign
+pacman --query -m
+
+# query unrequired
+pacman --query -t
+
+# query upgrades
+pacman --query -u
+
+# query orphans
+pacman --query -dqt
+
+# remove orphans
+pacman --remove -ns `pacman --query -tdq`
+
+# remove recursive with configs
+pacman --remove -ns

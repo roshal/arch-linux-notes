@@ -53,6 +53,12 @@ git clone https://aur.archlinux.org/network-manager-applet-indicator.git
 cd network-manager-applet-indicator
 makepkg -si
 cd ..
+cd ..
+
+git clone https://aur.archlinux.org/nm-connection-editor-indicator.git
+cd network-manager-applet-indicator
+makepkg -si
+cd ..
 
 git clone https://aur.archlinux.org/zoom.git
 cd zoom

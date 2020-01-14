@@ -71,6 +71,9 @@ sudo pacman --sync rxvt-unicode
 sudo pacman --sync stow
 sudo pacman --sync xorg-xrdb
 
+sudo pacman --sync networkmanager-openvpn
+sudo pacman --sync openvpn
+
 exit
 
 # unused thunar
