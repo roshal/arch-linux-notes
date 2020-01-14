@@ -19,3 +19,6 @@ $_
 rename -vn from to pattern-*
 
 dircolors
+
+clear
+reset
