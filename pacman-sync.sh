@@ -1,89 +1,89 @@
 
 exit
 
-sudo pacman --sync base
-sudo pacman --sync base-devel
+pacman --sync base
+pacman --sync base-devel
 
-sudo pacman --sync docker
-sudo pacman --sync docker-compose
+pacman --sync docker
+pacman --sync docker-compose
 
-sudo pacman --sync intel-media-driver
+pacman --sync intel-media-driver
 
-sudo pacman --sync intel-ucode
+pacman --sync intel-ucode
 
-sudo pacman --sync man-db
-sudo pacman --sync man-pages
+pacman --sync man-db
+pacman --sync man-pages
 
-sudo pacman --sync mako
-sudo pacman --sync rofi
-sudo pacman --sync sway
-sudo pacman --sync swayidle
-sudo pacman --sync swaylock
-sudo pacman --sync xorg-server-xwayland
+pacman --sync mako
+pacman --sync rofi
+pacman --sync sway
+pacman --sync swayidle
+pacman --sync swaylock
+pacman --sync xorg-server-xwayland
 
-sudo pacman --sync jq
+pacman --sync jq
 
-sudo pacman --sync grim
-sudo pacman --sync slurp
-sudo pacman --sync wl-clipboard
+pacman --sync grim
+pacman --sync slurp
+pacman --sync wl-clipboard
 
-sudo pacman --sync bash-completion
+pacman --sync bash-completion
 
-sudo pacman --sync code
+pacman --sync code
 
-sudo pacman --sync remmina
+pacman --sync remmina
 
-sudo pacman --sync alsa-utils
+pacman --sync alsa-utils
 
-sudo pacman --sync file-roller
-sudo pacman --sync gvfs
-sudo pacman --sync p7zip
-sudo pacman --sync thunar
-sudo pacman --sync thunar-archive-plugin
-sudo pacman --sync thunar-media-tags-plugin
-sudo pacman --sync thunar-vcs-plugin
+pacman --sync file-roller
+pacman --sync gvfs
+pacman --sync p7zip
+pacman --sync thunar
+pacman --sync thunar-archive-plugin
+pacman --sync thunar-media-tags-plugin
+pacman --sync thunar-vcs-plugin
 
-sudo pacman --sync firefox
-sudo pacman --sync chromium
+pacman --sync firefox
+pacman --sync chromium
 
-sudo pacman --sync libmicrodns
-sudo pacman --sync protobuf
-sudo pacman --sync vlc
+pacman --sync libmicrodns
+pacman --sync protobuf
+pacman --sync vlc
 
-sudo pacman --sync man-db
-sudo pacman --sync man-pages
-sudo pacman --sync nano
+pacman --sync man-db
+pacman --sync man-pages
+pacman --sync nano
 
-sudo pacman --sync neofetch
+pacman --sync neofetch
 
-sudo pacman --sync openssh
+pacman --sync openssh
 
-sudo pacman --sync yarn
+pacman --sync yarn
 
-sudo pacman --sync qt5-wayland
-sudo pacman --sync telegram-desktop
+pacman --sync qt5-wayland
+pacman --sync telegram-desktop
 
-sudo pacman --sync terminator
+pacman --sync terminator
 
-sudo pacman --sync transmission-gtk
+pacman --sync transmission-gtk
 
-sudo pacman --sync rxvt-unicode
-sudo pacman --sync stow
-sudo pacman --sync xorg-xrdb
+pacman --sync rxvt-unicode
+pacman --sync stow
+pacman --sync xorg-xrdb
 
-sudo pacman --sync networkmanager-openvpn
-sudo pacman --sync networkmanager-openvpn
-sudo pacman --sync openvpn
+pacman --sync networkmanager-openvpn
+pacman --sync networkmanager-openvpn
+pacman --sync openvpn
 
 exit
 
 # instead aur network-manager-applet-indicator
-sudo pacman --sync network-manager-applet
+pacman --sync network-manager-applet
 
 # unused thunar
-sudo pacman --sync ffmpegthumbnailer
-sudo pacman --sync thunar-volman
-sudo pacman --sync tumbler
+pacman --sync ffmpegthumbnailer
+pacman --sync thunar-volman
+pacman --sync tumbler
 
 # unused x
-sudo pacman --sync gdm
+pacman --sync gdm
