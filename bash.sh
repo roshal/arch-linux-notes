@@ -9,3 +9,5 @@ readlink "${HOME}"
 
 clear
 reset
+
+type bash
