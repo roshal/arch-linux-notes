@@ -19,3 +19,16 @@ git push origin         :<branch>
 
 git config user.email roshal@users.noreply.github.com
 git config user.name roshal
+
+git filter-branch --force --prune-empty --tag-name-filter cat -- --all --index-filter '
+git rm --cached --ignore-unmatch filename
+'
+
+git filter-branch --force --env-filter '
+NEW_NAME="roshal"
+NEW_EMAIL="roshal@users.noreply.github.com"
+export GIT_COMMITTER_NAME="$NEW_NAME"
+export GIT_COMMITTER_EMAIL="$NEW_EMAIL"
+export GIT_AUTHOR_NAME="$NEW_NAME"
+export GIT_AUTHOR_EMAIL="$NEW_EMAIL"
+'
