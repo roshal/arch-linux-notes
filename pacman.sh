@@ -26,6 +26,7 @@ pacman --query -u --upgrades
 pacman --remove -n --nosave
 pacman --remove -s --recursive
 
+pacman --sync -i --info
 pacman --sync -s --search
 pacman --sync -u --sysupgrade
 pacman --sync -y --refresh

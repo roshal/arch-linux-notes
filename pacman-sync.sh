@@ -72,9 +72,13 @@ sudo pacman --sync stow
 sudo pacman --sync xorg-xrdb
 
 sudo pacman --sync networkmanager-openvpn
+sudo pacman --sync networkmanager-openvpn
 sudo pacman --sync openvpn
 
 exit
+
+# instead aur network-manager-applet-indicator
+sudo pacman --sync network-manager-applet
 
 # unused thunar
 sudo pacman --sync ffmpegthumbnailer
