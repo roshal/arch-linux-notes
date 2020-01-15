@@ -1,0 +1,4 @@
+
+exit
+
+rofi -dump-config
