@@ -53,3 +53,6 @@ pacman --remove -ns `pacman --query -tdq`
 
 # remove recursive with configs
 pacman --remove -ns
+
+# remove recursive with configs
+pacman --sync -yu

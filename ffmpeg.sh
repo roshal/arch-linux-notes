@@ -18,9 +18,9 @@ media.mp4
 for value in $(seq -w 10)
 do
 	ffmpeg \
-	-i "$value.mkv" \
-	-i "$value.mka" \
+	-i "${value}.mkv" \
+	-i "${value}.mka" \
 	-map 0:v:0 \
 	-map 1:a:0 \
-	-c copy media/$value.mp4
+	-c copy media/${value}.mp4
 done

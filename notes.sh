@@ -12,7 +12,7 @@ apropos docker
 
 !!:$
 !$
-$_
+${_}
 
 !mk:2
 
