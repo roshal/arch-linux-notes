@@ -24,3 +24,7 @@ nmcli device wifi connect deadcafe password deadface hidden yes
 
 nmcli connection up id
 nmcli connection up corus --ask
+
+exit
+
+ip route
