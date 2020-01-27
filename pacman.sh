@@ -16,6 +16,9 @@ pacman --query -k --check
 pacman --query -l --list
 pacman --query -q --quiet
 
+pacman --query -o --owns
+pacman --query -s --search
+
 pacman --query -d --deps
 pacman --query -e --explicit
 pacman --query -m --foreign

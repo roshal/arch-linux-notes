@@ -8,6 +8,8 @@ pacman --sync docker
 pacman --sync docker-compose
 
 pacman --sync intel-media-driver
+pacman --sync libva-intel-driver
+pacman --sync libva-utils
 
 pacman --sync intel-ucode
 
@@ -67,9 +69,10 @@ pacman --sync terminator
 
 pacman --sync transmission-gtk
 
-pacman --sync rxvt-unicode
 pacman --sync stow
-pacman --sync xorg-xrdb
+
+# pacman --sync rxvt-unicode
+# pacman --sync xorg-xrdb
 
 pacman --sync networkmanager-openvpn
 pacman --sync networkmanager-openvpn
@@ -77,13 +80,13 @@ pacman --sync openvpn
 
 exit
 
-# instead aur network-manager-applet-indicator
+### instead aur network-manager-applet-indicator
 pacman --sync network-manager-applet
 
-# unused thunar
+### unused thunar
 pacman --sync ffmpegthumbnailer
 pacman --sync thunar-volman
 pacman --sync tumbler
 
-# unused x
+### unused x
 pacman --sync gdm
