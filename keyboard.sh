@@ -1,0 +1,4 @@
+
+exit
+
+libinput debug-events
