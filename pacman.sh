@@ -52,7 +52,7 @@ pacman --query -u
 pacman --query -dqt
 
 # remove orphans
-pacman --remove -ns `pacman --query -tdq`
+pacman --remove -ns $(pacman --query -tdq)
 
 # remove recursive with configs
 pacman --remove -ns

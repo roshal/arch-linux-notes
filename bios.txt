@@ -1,2 +1,7 @@
 
 https://wiki.archlinux.org/index.php/VirtualBox#No_64-bit_OS_client_options
+intel virtualization technology
+vt-d
+
+https://biosgid.ru/parametry-bios-setup/parametry-chipseta/above-4g-decoding.html
+above 4g decoding
