@@ -1,6 +1,10 @@
 
 exit
 
+cat .git/config
+
+exit
+
 git push origin :old-name new-name
 
 git branch -m --move
@@ -23,6 +27,10 @@ git config user.name roshal
 git filter-branch --force --prune-empty --tag-name-filter cat -- --all --index-filter '
 git rm --cached --ignore-unmatch filename
 '
+
+git filter-branch --force --prune-empty --index-filter '
+git rm --cached --ignore-unmatch -- names.txt branch-names.txt
+' --tag-name-filter cat -- --all
 
 git filter-branch --force --env-filter '
 NEW_NAME="roshal"
