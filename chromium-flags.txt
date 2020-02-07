@@ -1,2 +1,0 @@
-
-chrome://flags/#extensions-toolbar-menu
