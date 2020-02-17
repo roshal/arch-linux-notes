@@ -1,0 +1,4 @@
+
+@include https://*.youtube.com/*
+
+@connect googlevideo.com

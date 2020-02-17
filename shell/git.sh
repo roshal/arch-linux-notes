@@ -29,7 +29,7 @@ git rm --cached --ignore-unmatch filename
 '
 
 git filter-branch --force --prune-empty --index-filter '
-git rm --cached --ignore-unmatch -- names.txt branch-names.txt
+git rm --cached --ignore-unmatch -- abc.txt xyz.txt
 ' --tag-name-filter cat -- --all
 
 git filter-branch --force --env-filter '
