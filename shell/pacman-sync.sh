@@ -44,6 +44,7 @@ pacman --sync thunar
 pacman --sync thunar-archive-plugin
 pacman --sync thunar-media-tags-plugin
 pacman --sync thunar-vcs-plugin
+pacman --sync tumbler
 
 pacman --sync firefox
 pacman --sync chromium
@@ -86,7 +87,6 @@ pacman --sync network-manager-applet
 ### unused thunar
 pacman --sync ffmpegthumbnailer
 pacman --sync thunar-volman
-pacman --sync tumbler
 
 ### unused x
 pacman --sync gdm
