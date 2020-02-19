@@ -3,12 +3,12 @@ exit
 
 cat .git/config
 
-###
+exit
 
 git -p --paginate
 git -p log
 
-###
+exit
 
 git branch -m --move
 git branch -m update/common
@@ -35,21 +35,4 @@ git push origin         :<branch>
 
 git reset --mixed
 
-###
-
-git filter-branch --force --prune-empty --tag-name-filter cat -- --all --index-filter '
-git rm --cached --ignore-unmatch filename
-'
-
-git filter-branch --force --prune-empty --index-filter '
-git rm --cached --ignore-unmatch -- abc.txt xyz.txt
-' --tag-name-filter cat -- --all
-
-git filter-branch --force --env-filter '
-NEW_NAME="roshal"
-NEW_EMAIL="roshal@users.noreply.github.com"
-export GIT_COMMITTER_NAME="$NEW_NAME"
-export GIT_COMMITTER_EMAIL="$NEW_EMAIL"
-export GIT_AUTHOR_NAME="$NEW_NAME"
-export GIT_AUTHOR_EMAIL="$NEW_EMAIL"
-'
+git show --name-only
