@@ -49,3 +49,7 @@ makepkg -si; cd ..
 git clone https://aur.archlinux.org/zoom.git
 cd zoom
 makepkg -si; cd ..
+
+git clone https://aur.archlinux.org/wf-recorder-git.git
+cd wf-recorder-git
+makepkg -si; cd ..
