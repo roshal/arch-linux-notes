@@ -16,6 +16,8 @@ pacman --sync intel-ucode
 pacman --sync man-db
 pacman --sync man-pages
 
+pacman --sync tree
+
 pacman --sync mako
 pacman --sync rofi
 pacman --sync sway
