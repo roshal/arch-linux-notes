@@ -28,3 +28,7 @@ nmcli connection up corus --ask
 exit
 
 ip route
+
+exit
+
+ss -i --info
