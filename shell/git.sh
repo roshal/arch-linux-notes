@@ -35,6 +35,9 @@ git push origin         :<branch>
 
 git reset --mixed
 
+git shortlog -w0,4
+
 git show --name-only
+git show --name-status
 
 git config --global user.signingkey

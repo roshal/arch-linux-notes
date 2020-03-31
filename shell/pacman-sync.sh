@@ -63,6 +63,9 @@ pacman --sync neofetch
 
 pacman --sync openssh
 
+pacman --sync python-poetry
+pacman --sync python-virtualenv
+
 pacman --sync yarn
 
 pacman --sync qt5-wayland
