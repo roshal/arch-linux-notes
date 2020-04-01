@@ -1,4 +1,9 @@
 
 exit
 
-libinput debug-events
+sudo libinput debug-events
+
+sudo showkeys
+
+sudo showkey --keycodes
+sudo showkey --scancodes
