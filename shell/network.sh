@@ -5,6 +5,8 @@ sudo pacman --sync dhcpcd
 
 sudo systemctl enable --now dhcpcd
 
+systemctl enable --now systemd-resolved.service
+
 exit
 
 sudo pacman --sync networkmanager
@@ -27,8 +29,14 @@ nmcli connection up corus --ask
 
 exit
 
-ip route
+ip route show
+ip link show
+ip address show
 
 exit
 
 ss -i --info
+
+exit
+
+resolvectl status
