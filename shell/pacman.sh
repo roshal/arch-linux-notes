@@ -57,5 +57,5 @@ pacman --remove -ns $(pacman --query -tdq)
 # remove recursive with configs
 pacman --remove -ns
 
-# remove recursive with configs
+# refresh and sysupgrade
 pacman --sync -yu
