@@ -70,3 +70,8 @@ git clone https://aur.archlinux.org/bluez-alsa-git.git
 cd bluez-alsa-git
 makepkg -si
 cd ..
+
+git clone https://aur.archlinux.org/theia-next.git
+cd theia-next
+makepkg -si
+cd ..
