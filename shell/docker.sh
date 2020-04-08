@@ -10,3 +10,7 @@ usermod --append --groups docker user
 newgrp docker
 
 sudo systemctl enable --now docker.service
+
+exit
+
+docker system prune --volumes
