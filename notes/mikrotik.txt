@@ -1,0 +1,5 @@
+
+/ip upnp set enabled=yes allow-disable-external-interface=yes show-dummy-rule=yes
+
+/ip upnp interfaces add type=external interface=pppoe-out1
+/ip upnp interfaces add type=internal interface=bridge
