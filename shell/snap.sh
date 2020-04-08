@@ -27,6 +27,10 @@ sudo snap install insomnia
 
 # webstorm
 
-sudo snap install webstorm --classic
+sudo snap install --classic webstorm
+
+# pycharm
+
+sudo snap install --classic pycharm
 
 echo 'export _JAVA_AWT_WM_NONREPARENTING=1' >> /.bashrc
