@@ -1,0 +1,6 @@
+
+exit
+
+umask
+
+umask -S
