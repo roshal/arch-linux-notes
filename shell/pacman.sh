@@ -1,15 +1,18 @@
 
 exit
 
-# alias
+### alias
 
 alias pacman='sudo pacman --color always'
 
-# flags
+### flags
 
+pacman -D --database
 pacman -Q --query
 pacman -R --remove
 pacman -S --sync
+
+pacman --database
 
 pacman --query -i --info
 pacman --query -k --check
@@ -34,28 +37,34 @@ pacman --sync -s --search
 pacman --sync -u --sysupgrade
 pacman --sync -y --refresh
 
-# commands
+### commands
 
-# query check files
+### mark packages as non-explicitly installed
+pacman --database --asdeps ..
+
+### mark packages as explicitly installed
+pacman --database --asexplicit ..
+
+### query check files
 pacman --query -kq
 
-# query foreign
+### query foreign
 pacman --query -m
 
-# query unrequired
+### query unrequired
 pacman --query -t
 
-# query upgrades
+### query upgrades
 pacman --query -u
 
-# query orphans
+### query orphans
 pacman --query -dqt
 
-# remove orphans
+### remove orphans
 pacman --remove -ns $(pacman --query -dqt)
 
-# remove recursive with configs
+### remove recursive with configs
 pacman --remove -ns
 
-# refresh and sysupgrade
+### refresh and sysupgrade
 pacman --sync -yu

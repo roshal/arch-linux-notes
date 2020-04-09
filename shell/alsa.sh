@@ -1,13 +1,28 @@
 
 exit
 
-alsamixer
+### save state
+sudo alsactl store
 
-# save
-alsactl store
+### load state
+sudo alsactl restore
 
 exit
 
-curl https://www.kozco.com/tech/piano2.wav > audio.wav
+### display card params
+aplay --device hw /dev/urandom --dump-hw-params
 
-aplay audio.wav -D default
+exit
+
+alsamixer
+
+exit
+
+### disable loopback mixing
+amixer set Loopback\ Mixing Disabled
+
+amixer --quiet set Master 0db
+
+exit
+
+speaker-test

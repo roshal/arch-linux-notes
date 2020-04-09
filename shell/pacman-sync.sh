@@ -77,6 +77,12 @@ pacman --sync transmission-gtk
 
 pacman --sync stow
 
+pacman --sync imv
+
+pacman --sync dex
+
+pacman --sync audacity
+
 # pacman --sync rxvt-unicode
 # pacman --sync xorg-xrdb
 
@@ -95,3 +101,8 @@ pacman --sync thunar-volman
 
 ### unused x
 pacman --sync gdm
+
+### pulseaudio graphical frontends
+pacman --sync paprefs
+pacman --sync pasystray
+pacman --sync pavucontrol
