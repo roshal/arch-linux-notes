@@ -8,3 +8,6 @@ exit
 
 source
 export
+
+# who logged in
+w

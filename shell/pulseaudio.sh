@@ -31,19 +31,19 @@ pulseaudio -v
 pulseaudio -vv
 pulseaudio -vvv
 pulseaudio -vvvv
-pulseaudio -vvvv
 
 pulseaudio --kill
 
 pulseaudio --start
 
-pulseaudio --kill ; sleep 1 ; pulseaudio --start
-
 ### display deamon pid
 pulseaudio --check -v
 
-### do not work
-# pulseaudio --kill --start
+### does not work
+pulseaudio --kill --start
+
+### does not work
+pulseaudio --kill ; sleep 1 ; pulseaudio --start
 
 exit
 
@@ -65,7 +65,19 @@ pacmd
 
 pacmd ls
 
+pacmd stat
+
 exit
 
 ### disable pulseaudio and run audacity
 pasuspender -- audacity
+
+exit
+
+man pacmd
+man pulseaudio
+
+man default.pa
+man pulse-cli-syntax
+man pulse-client.conf
+man pulse-daemon.conf
