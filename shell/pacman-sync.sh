@@ -83,6 +83,8 @@ pacman --sync imv
 
 pacman --sync dex
 
+pacman --sync hub
+
 pacman --sync audacity
 
 # pacman --sync rxvt-unicode
