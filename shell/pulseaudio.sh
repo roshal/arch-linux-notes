@@ -36,14 +36,13 @@ pulseaudio --kill
 
 pulseaudio --start
 
-### display deamon pid
-pulseaudio --check -v
-
-### does not work
 pulseaudio --kill --start
 
-### does not work
-pulseaudio --kill ; sleep 1 ; pulseaudio --start
+### workaround
+# pulseaudio --kill ; sleep 1 ; pulseaudio --start
+
+### display deamon pid
+pulseaudio --check -v
 
 exit
 
@@ -57,6 +56,7 @@ pulsemixer
 exit
 
 pactl list sinks
+pactl list sinks short
 
 exit
 
@@ -81,3 +81,12 @@ man default.pa
 man pulse-cli-syntax
 man pulse-client.conf
 man pulse-daemon.conf
+
+exit
+
+pacat < audio.wav
+
+### noise
+
+pacat < /dev/urandom
+pacat < /dev/random

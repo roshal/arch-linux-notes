@@ -71,6 +71,8 @@ pacman --sync yarn
 pacman --sync qt5-wayland
 pacman --sync telegram-desktop
 
+pacman --sync termite
+
 pacman --sync terminator
 
 pacman --sync transmission-gtk
@@ -92,6 +94,18 @@ pacman --sync openvpn
 
 exit
 
+### network
+
+sudo pacman --sync networkmanager
+sudo pacman --sync networkmanager-openvpn
+
+### no sway support
+sudo pacman --sync network-manager-applet
+
+sudo pacman --sync nm-connection-editor
+
+exit
+
 ### instead aur network-manager-applet-indicator
 pacman --sync network-manager-applet
 
@@ -106,3 +120,6 @@ pacman --sync gdm
 pacman --sync paprefs
 pacman --sync pasystray
 pacman --sync pavucontrol
+
+### bluetooth graphical manager
+pacman --sync blueman

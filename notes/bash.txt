@@ -1,0 +1,98 @@
+
+### controlling the screen
+
+### clears the screen
+ctrl+l
+
+### pause all command output to the screen
+ctrl+s
+
+### resume output to the screen after pausing
+ctrl+q
+
+### move cursor on the command line
+
+### moves the cursor to the start of a line
+ctrl+a
+home
+
+### moves the cursor to the end of the line
+ctrl+e
+end
+
+### moves the cursor back one character at a time
+ctrl+b
+left
+
+### moves the cursor forward one character at a time
+ctrl+f
+right
+
+### moves the cursor back one word at a time
+alt+b
+ctrl+left
+esc b
+
+### moves the cursor forward one word at a time
+alt+c
+ctrl+right
+esc f
+
+### search through bash history
+
+### retrieves the previous command from history
+ctrl+p
+up
+
+### retrieves the next command from history
+ctrl+n
+down
+
+### use the last word of the previous command
+alt+.
+
+### starts a reverse search through the bash history
+ctrl+r
+
+### launches a forward search through the bash history
+ctrl+s
+
+### quits reverse or forward search through the bash history
+ctrl+g
+
+### delete text on the command line
+
+### remove or deletes the character under the cursor
+ctrl+d
+ctrl+delete
+
+### removes all text from the cursor to the end of the line
+ctrl+k
+
+### removes all the text from the cursor to the beginning of the line
+ctrl+x backspace
+
+### transpose text or change case on the command line
+
+### transposes the two words immediately before or under the cursor
+esc t
+
+### transforms the text from the cursor to the end of the word to uppercase
+esc u
+
+### transforms the text from the cursor to the end of the word to lowercase
+esc l
+
+### changes the letter under the cursor or the first letter of the next word to uppercase leaving the rest of the word unchanged
+esc c
+
+### working with processes in linux
+
+### suspend the current foreground process by sending the sigtstp signal to the process
+ctrl+z
+
+### interrupt the current foreground process by sending the sigint signal to the process
+ctrl+c
+
+### exit the bash shell
+ctrl+d

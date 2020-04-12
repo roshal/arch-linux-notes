@@ -68,3 +68,7 @@ pacman --remove -ns
 
 ### refresh and sysupgrade
 pacman --sync -yu
+
+### pacman-key
+
+pacman-key --refresh-keys
