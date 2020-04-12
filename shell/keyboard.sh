@@ -1,6 +1,8 @@
 
 exit
 
+sudo dumpkeys
+
 sudo libinput debug-events
 
 sudo showkey
