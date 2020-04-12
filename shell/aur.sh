@@ -75,3 +75,13 @@ git clone https://aur.archlinux.org/theia-next.git
 cd theia-next
 makepkg -si
 cd ..
+
+git clone https://aur.archlinux.org/wl-clipboard-rs.git
+cd wl-clipboard-rs
+makepkg -si
+cd ..
+
+git clone https://aur.archlinux.org/wev.git
+cd wev
+makepkg -si
+cd ..

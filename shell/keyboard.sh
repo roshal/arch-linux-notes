@@ -3,7 +3,8 @@ exit
 
 sudo libinput debug-events
 
-sudo showkeys
-
+sudo showkey
 sudo showkey --keycodes
+
+sudo showkey --ascii
 sudo showkey --scancodes
