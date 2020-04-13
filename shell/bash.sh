@@ -1,6 +1,8 @@
 
 exit
 
+man bash
+
 echo ${HOME%/*}
 
 dirname "${HOME}"
