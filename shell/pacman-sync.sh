@@ -8,8 +8,6 @@ pacman --sync docker
 pacman --sync docker-compose
 
 pacman --sync intel-media-driver
-pacman --sync libva-intel-driver
-pacman --sync libva-utils
 
 pacman --sync intel-ucode
 
@@ -125,3 +123,11 @@ pacman --sync pavucontrol
 
 ### bluetooth graphical manager
 pacman --sync blueman
+
+exit
+
+### graphics
+
+### old and unnecessary
+pacman --sync libva-intel-driver
+pacman --sync libva-utils
