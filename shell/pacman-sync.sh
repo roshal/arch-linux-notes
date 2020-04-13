@@ -35,8 +35,6 @@ pacman --sync code
 
 pacman --sync remmina
 
-pacman --sync alsa-utils
-
 pacman --sync file-roller
 pacman --sync gvfs
 pacman --sync p7zip
@@ -53,8 +51,6 @@ pacman --sync libmicrodns
 pacman --sync protobuf
 pacman --sync vlc
 
-pacman --sync man-db
-pacman --sync man-pages
 pacman --sync nano
 
 pacman --sync neofetch
@@ -85,44 +81,65 @@ pacman --sync hub
 
 pacman --sync audacity
 
-# pacman --sync rxvt-unicode
-# pacman --sync xorg-xrdb
+exit
 
-pacman --sync networkmanager-openvpn
-pacman --sync networkmanager-openvpn
-pacman --sync openvpn
+### rxvt-unicode
+
+pacman --sync rxvt-unicode
+pacman --sync xorg-xrdb
 
 exit
 
 ### network
 
-sudo pacman --sync networkmanager
-sudo pacman --sync networkmanager-openvpn
+pacman --sync networkmanager
 
+pacman --sync networkmanager-openvpn
+
+pacman --sync openvpn
+
+pacman --sync nm-connection-editor
+
+### aur network-manager-applet-indicator instead
 ### no sway support
-sudo pacman --sync network-manager-applet
-
-sudo pacman --sync nm-connection-editor
+pacman --sync network-manager-applet
 
 exit
 
-### instead aur network-manager-applet-indicator
-pacman --sync network-manager-applet
+### thunar
 
 ### unused thunar
 pacman --sync ffmpegthumbnailer
 pacman --sync thunar-volman
 
+exit
+
+### xorg
+
 ### unused x
 pacman --sync gdm
+
+exit
+
+### bluetooth
+
+### bluetooth graphical manager
+pacman --sync blueman
+
+### bluetooth tools like bluetoothctl
+pacman --sync bluez-utils
+
+exit
+
+### sound
+
+### alsa tools like alsamixer
+pacman --sync alsa-utils
 
 ### pulseaudio graphical frontends
 pacman --sync paprefs
 pacman --sync pasystray
 pacman --sync pavucontrol
-
-### bluetooth graphical manager
-pacman --sync blueman
 
 exit
 

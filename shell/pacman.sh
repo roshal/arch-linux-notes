@@ -18,8 +18,6 @@ pacman --query -i --info
 pacman --query -k --check
 pacman --query -l --list
 pacman --query -q --quiet
-
-pacman --query -o --owns
 pacman --query -s --search
 
 pacman --query -d --deps
@@ -29,46 +27,55 @@ pacman --query -n --native
 pacman --query -t --unrequired
 pacman --query -u --upgrades
 
-pacman --remove -n --nosave
-pacman --remove -s --recursive
+pacman --query -o --owns ..
+
+pacman --remove -n --nosave ..
+pacman --remove -s --recursive ..
 
 pacman --sync -i --info
 pacman --sync -s --search
+
 pacman --sync -u --sysupgrade
 pacman --sync -y --refresh
-
-### commands
-
-### mark packages as non-explicitly installed
-pacman --database --asdeps ..
-
-### mark packages as explicitly installed
-pacman --database --asexplicit ..
-
-### query check files
-pacman --query -kq
-
-### query foreign
-pacman --query -m
-
-### query unrequired
-pacman --query -t
-
-### query upgrades
-pacman --query -u
-
-### query orphans
-pacman --query -dqt
-
-### remove orphans
-pacman --remove -ns $(pacman --query -dqt)
-
-### remove recursive with configs
-pacman --remove -ns
-
-### refresh and sysupgrade
-pacman --sync -yu
 
 ### pacman-key
 
 pacman-key --refresh-keys
+
+### commands
+
+### mark packages as non-explicitly installed
+pacman -D --asdeps ..
+
+### mark packages as explicitly installed
+pacman -D --asexplicit ..
+
+### query orphans
+pacman -Qdqt
+
+### query check files
+pacman -Qkq
+
+### query files
+pacman -Ql
+
+### query foreign
+pacman -Qm
+
+### query file owns
+pacman -Qo ..
+
+### query unrequired
+pacman -Qt
+
+### query upgrades
+pacman -Qu
+
+### remove recursive with configs
+pacman -Rns ..
+
+### remove orphans
+pacman -Rns $(pacman --query -dqt)
+
+### refresh and sysupgrade
+pacman -Syu
