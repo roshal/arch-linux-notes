@@ -23,6 +23,7 @@ cd insomnia
 makepkg -si
 cd ..
 
+### hstr alternative
 git clone https://aur.archlinux.org/mcfly.git
 cd mcfly
 makepkg -si
