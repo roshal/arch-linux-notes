@@ -40,3 +40,7 @@ ss -i --info
 exit
 
 resolvectl status
+
+exit
+
+nmcli connection import type openvpn file file.ovpn

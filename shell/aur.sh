@@ -86,3 +86,8 @@ git clone https://aur.archlinux.org/wev.git
 cd wev
 makepkg -si
 cd ..
+
+git clone https://aur.archlinux.org/zoom.git
+cd zoom
+makepkg -si
+cd ..
