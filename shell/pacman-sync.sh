@@ -121,6 +121,13 @@ pacman --sync gdm
 
 exit
 
+### tor
+
+pacman --sync tor
+pacman --sync torbrowser-launcher
+
+exit
+
 ### bluetooth
 
 ### bluetooth graphical manager
