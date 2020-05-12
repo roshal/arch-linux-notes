@@ -35,8 +35,13 @@ pacman --sync code
 
 pacman --sync remmina
 
-pacman --sync file-roller
+pacman --sync picard
+pacman --sync quodlibet
+
 pacman --sync gvfs
+pacman --sync gvfs-mtp
+
+pacman --sync file-roller
 pacman --sync p7zip
 pacman --sync thunar
 pacman --sync thunar-archive-plugin

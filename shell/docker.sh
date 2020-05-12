@@ -14,3 +14,13 @@ sudo systemctl enable --now docker.service
 exit
 
 docker system prune --volumes
+
+exit
+
+sudo kill -SIGHUP $(pidof dockerd)
+
+journalctl -u docker.service
+
+exit
+
+sudo systemctl restart docker
