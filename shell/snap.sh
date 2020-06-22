@@ -1,7 +1,7 @@
 
 exit
 
-# https://snapcraft.io/docs/installing-snap-on-arch-linux
+# # https://snapcraft.io/docs/installing-snap-on-arch-linux
 
 cd /-/aur
 
@@ -11,7 +11,7 @@ makepkg -si
 
 sudo systemctl enable --now snapd.socket
 
-# enable classic snap support
+### enable classic snap support
 sudo ln -s /var/lib/snapd/snap /snap
 
 #
@@ -25,11 +25,11 @@ hello-world
 sudo snap install figma-linux
 sudo snap install insomnia
 
-# webstorm
+### webstorm
 
 sudo snap install --classic webstorm
 
-# pycharm
+### pycharm
 
 sudo snap install --classic pycharm
 

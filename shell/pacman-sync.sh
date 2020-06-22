@@ -52,6 +52,7 @@ pacman --sync tumbler
 pacman --sync firefox
 pacman --sync chromium
 
+# # https://wiki.archlinux.org/index.php/VLC_media_player#Chromecast_support
 pacman --sync libmicrodns
 pacman --sync protobuf
 pacman --sync vlc
@@ -85,6 +86,8 @@ pacman --sync dex
 pacman --sync hub
 
 pacman --sync audacity
+
+pacman --sync playerctl
 
 exit
 
@@ -160,3 +163,21 @@ exit
 ### old and unnecessary
 pacman --sync libva-intel-driver
 pacman --sync libva-utils
+
+exit
+
+### hardware
+
+pacman --sync rrdtool
+
+### wheel
+
+pacman --sync imwheel
+
+### wireguard
+
+pacman --sync wireguard-tools
+
+pacman --sync gnu-netcat
+
+pacman --sync systemd-resolvconf

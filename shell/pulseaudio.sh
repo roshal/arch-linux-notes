@@ -58,6 +58,9 @@ exit
 pactl list sinks
 pactl list sinks short
 
+pactl set-card-profile bluez_card.70_26_05_DD_FD_DD a2dp_sink
+pactl set-card-profile bluez_card.70_26_05_DD_FD_DD headset_head_unit
+
 exit
 
 ### runtime configure
@@ -66,6 +69,9 @@ pacmd
 pacmd ls
 
 pacmd stat
+
+pacmd set-card-profile bluez_card.70_26_05_DD_FD_DD a2dp_sink
+pacmd set-card-profile bluez_card.70_26_05_DD_FD_DD headset_head_unit
 
 exit
 
@@ -90,3 +96,7 @@ pacat < audio.wav
 
 pacat < /dev/urandom
 pacat < /dev/random
+
+exit
+
+pulsemixer --list

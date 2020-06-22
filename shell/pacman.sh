@@ -75,7 +75,7 @@ pacman -Qu
 pacman -Rns ..
 
 ### remove orphans
-pacman -Rns $(pacman --query -dqt)
+pacman -Rns $(pacman -Qdqt)
 
 ### refresh and sysupgrade
 pacman -Syu

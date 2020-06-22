@@ -1,7 +1,7 @@
 
 exit
 
-# https://github.com/swaywm/wlroots/blob/master/docs/env_vars.md#rdp-backend
+# # https://github.com/swaywm/wlroots/blob/master/docs/env_vars.md#rdp-backend
 
 openssl genrsa -out tls.key 2048
 openssl req -new -key tls.key -out tls.csr

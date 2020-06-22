@@ -1,0 +1,3 @@
+
+### open add-ons manager
+ctrl+shift+a

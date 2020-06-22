@@ -1,0 +1,10 @@
+
+https://aur.archlinux.org/packages/hstr
+https://aur.archlinux.org/packages/insomnia
+https://aur.archlinux.org/packages/nvm
+https://aur.archlinux.org/packages/phototonic
+https://aur.archlinux.org/packages/snapd
+https://aur.archlinux.org/packages/teamviewer
+https://aur.archlinux.org/packages/wl-clipboard-rs
+https://aur.archlinux.org/packages/xnviewmp
+https://aur.archlinux.org/packages/zoom
