@@ -5,6 +5,8 @@ sudo pacman --sync dhcpcd
 
 sudo systemctl enable --now dhcpcd
 
+exit
+
 systemctl enable --now systemd-resolved.service
 
 exit

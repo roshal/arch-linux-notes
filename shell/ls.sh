@@ -1,0 +1,4 @@
+
+exit
+
+ls --full-time

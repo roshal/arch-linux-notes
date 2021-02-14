@@ -14,6 +14,10 @@ sudo localectl set-locale LC_TIME=POSIX
 
 exit
 
+sudo localectl set-locale LC_MESSAGES=ru_RU.UTF-8
+
+exit
+
 LANG=ru_RU.UTF-8              ls --help | head -1
 LC_CTYPE=ru_RU.UTF-8          ls --help | head -1
 LC_NUMERIC=ru_RU.UTF-8        ls --help | head -1
