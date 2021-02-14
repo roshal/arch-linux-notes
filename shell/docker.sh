@@ -24,3 +24,27 @@ journalctl -u docker.service
 exit
 
 sudo systemctl restart docker
+
+exit
+
+docker image ls
+docker images
+
+exit
+
+docker container prune
+
+docker image prune
+
+docker image prune --all
+
+docker network prune
+
+docker volume prune
+
+docker system prune
+docker system prune --volumes
+
+exit
+
+nmcli connection modify docker0 con-name docker

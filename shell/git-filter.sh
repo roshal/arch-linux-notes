@@ -1,38 +1,31 @@
 
 exit
 
-git filter-branch --force --prune-empty --tag-name-filter cat -- --all --index-filter '
-git rm --cached --ignore-unmatch filename
-'
+git filter-branch --force --prune-empty --index-filter "$(
+	echo git rm --cached --ignore-unmatch -- file file
+)" --tag-name-filter cat -- --all
 
-git filter-branch --force --prune-empty --index-filter '
-git rm --cached --ignore-unmatch -- abc.txt xyz.txt
-' --tag-name-filter cat -- --all
+git filter-branch --force --env-filter "$(echo
+	mail=roshal@users.noreply.github.com
+	name=roshal
+	echo export GIT_AUTHOR_EMAIL=\'${mail}\'
+	echo export GIT_AUTHOR_NAME="'"${name}\'
+	echo export GIT_COMMITTER_EMAIL=\'${mail}\'
+	echo export GIT_COMMITTER_NAME="'"${name}\'
+)"
 
-git filter-branch --force --env-filter '
-NEW_NAME="roshal"
-NEW_EMAIL="roshal@users.noreply.github.com"
-export GIT_AUTHOR_EMAIL="$NEW_EMAIL"
-export GIT_AUTHOR_NAME="$NEW_NAME"
-export GIT_COMMITTER_EMAIL="$NEW_EMAIL"
-export GIT_COMMITTER_NAME="$NEW_NAME"
-'
-
-git filter-branch --env-filter '
-OLD_EMAIL="roshal@users.noreply.github.com"
-
-NEW_NAME="roshal"
-NEW_EMAIL="roshal@users.noreply.github.com"
-
-if [ "${GIT_AUTHOR_EMAIL}" = "${OLD_EMAIL}" ]
-then
-	export GIT_AUTHOR_EMAIL="${NEW_EMAIL}"
-	export GIT_AUTHOR_NAME="${NEW_NAME}"
-fi
-
-if [ "${GIT_COMMITTER_EMAIL}" = "${OLD_EMAIL}" ]
-then
-	export GIT_COMMITTER_EMAIL="${NEW_EMAIL}"
-	export GIT_COMMITTER_NAME="${NEW_NAME}"
-fi
-'
+git filter-branch --env-filter "$(echo
+	data=roshal@users.noreply.github.com
+	mail=roshal@users.noreply.github.com
+	name=roshal
+	echo if test \"'${GIT_AUTHOR_EMAIL}'\" = \'${data}\'
+	echo then
+	echo export GIT_AUTHOR_EMAIL=\'${mail}\'
+	echo export GIT_AUTHOR_NAME="'"${name}\'
+	echo fi
+	echo if test \"'${GIT_COMMITTER_EMAIL}'\" = \'${data}\'
+	echo then
+	echo export GIT_COMMITTER_EMAIL=\'${mail}\'
+	echo export GIT_COMMITTER_NAME="'"${name}\'
+	echo fi
+)"

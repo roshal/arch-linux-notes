@@ -7,3 +7,15 @@ LC_TIME=en_DK.UTF-8 date +%D%F%s%T
 LC_TIME=en_GB.UTF-8 date +%D%F%s%T
 LC_TIME=en_US.UTF-8 date +%D%F%s%T
 LC_TIME=ru_RU.UTF-8 date +%D%F%s%T
+
+:
+
+while value=$((2000000 - 1$(date +%N) / 1000))
+do echo "${value}" && usleep "${value}"
+done
+
+:
+
+while value=$(expr 1000000 - $(date +%N) / 1000)
+do echo "${value}" && usleep "${value}"
+done

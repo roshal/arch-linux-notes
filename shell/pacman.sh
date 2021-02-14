@@ -35,6 +35,7 @@ pacman --remove -s --recursive ..
 pacman --sync -i --info
 pacman --sync -s --search
 
+pacman --sync -c --clean
 pacman --sync -u --sysupgrade
 pacman --sync -y --refresh
 

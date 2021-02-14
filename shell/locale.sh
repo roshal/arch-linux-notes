@@ -9,9 +9,10 @@ sudo localectl status
 sudo localectl set-locale en_US.UTF-8
 
 sudo localectl set-locale LANG=en_US.UTF-8
-sudo localectl set-locale LC_TIME=C
-sudo localectl set-locale LC_COLLATE=C
-sudo localectl set-locale LC_MESSAGES=ru_RU.UTF-8
+sudo localectl set-locale LC_COLLATE=POSIX
+sudo localectl set-locale LC_TIME=POSIX
+
+exit
 
 LANG=ru_RU.UTF-8              ls --help | head -1
 LC_CTYPE=ru_RU.UTF-8          ls --help | head -1
@@ -27,6 +28,8 @@ LC_TELEPHONE=ru_RU.UTF-8      ls --help | head -1
 LC_MEASUREMENT=ru_RU.UTF-8    ls --help | head -1
 LC_IDENTIFICATION=ru_RU.UTF-8 ls --help | head -1
 LC_ALL=ru_RU.UTF-8            ls --help | head -1
+
+exit
 
 unset LANG
 source /etc/profile.d/locale.sh

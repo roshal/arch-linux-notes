@@ -27,3 +27,11 @@ systemctl hybrid-sleep
 systemctl poweroff
 systemctl reboot
 systemctl suspend
+
+exit
+
+systemctl --user daemon-reload
+
+exit
+
+systemctl --user --now disable thunar

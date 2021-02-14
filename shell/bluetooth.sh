@@ -12,3 +12,9 @@ bluetoothctl
 ### pair 00:00:00:00:00:00
 ### connect 00:00:00:00:00:00
 ### trust 00:00:00:00:00:00
+
+exit
+
+sudo systemctl start bluetooth.service
+
+sudo systemctl restart bluetooth.service

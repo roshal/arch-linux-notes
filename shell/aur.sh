@@ -19,6 +19,12 @@ git clone https://aur.archlinux.org/tor-browser.git
 
 exit
 
+# gpg --keyserver keys.openpgp.org --receive-keys 5C6DA024DDE27178073EA103F4B432D5D67990E3
+git clone https://aur.archlinux.org/wob.git
+
+exit
+
+git clone https://aur.archlinux.org/010editor.git
 git clone https://aur.archlinux.org/hstr.git
 git clone https://aur.archlinux.org/insomnia.git
 git clone https://aur.archlinux.org/nvm.git
@@ -55,3 +61,31 @@ git clone https://aur.archlinux.org/wev.git
 git clone https://aur.archlinux.org/xdg-desktop-portal-wlr.git
 
 git clone https://aur.archlinux.org/xnviewmp.git
+
+git clone https://aur.archlinux.org/terminus-terminal-bin.git
+
+exit
+
+# # https://wiki.archlinux.org/index.php/Uniform_look_for_Qt_and_GTK_applications#Adwaita
+git clone https://aur.archlinux.org/adwaita-qt.git
+
+exit
+
+git clone https://aur.archlinux.org/ttf-roboto-slab.git
+
+exit
+
+git clone https://aur.archlinux.org/mp4fixer-git.git
+
+exit
+
+git clone https://aur.archlinux.org/tmatrix-git.git
+git clone https://aur.archlinux.org/unimatrix-git.git
+
+exit
+
+git clone https://aur.archlinux.org/code-git.git
+
+exit
+
+git clone https://aur.archlinux.org/castnow.git

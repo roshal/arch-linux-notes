@@ -11,7 +11,7 @@ exit
 
 function generate {
 	while ! [[ "${value}" =~ MD5:00 ]]
-	do rm -f "$1"
-	value=$(ssh-keygen -b 4096 -E md5 -P '' -f "$1")
+	do rm -f "${1}"
+	value=$(ssh-keygen -b 4096 -E md5 -P '' -f "${1}")
 	done
 }

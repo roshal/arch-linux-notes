@@ -25,6 +25,10 @@ hello-world
 sudo snap install figma-linux
 sudo snap install insomnia
 
+### adb
+
+sudo snap install scrcpy
+
 ### webstorm
 
 sudo snap install --classic webstorm
@@ -34,3 +38,7 @@ sudo snap install --classic webstorm
 sudo snap install --classic pycharm
 
 echo 'export _JAVA_AWT_WM_NONREPARENTING=1' >> /.bashrc
+
+### wps-office
+
+sudo snap install wps-office

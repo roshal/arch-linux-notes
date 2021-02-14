@@ -73,3 +73,7 @@ sudo wg-quick down /-/wireguard
 sudo wg-quick up /-/wireguard
 
 sudo wg
+
+exit
+
+modprobe wireguard

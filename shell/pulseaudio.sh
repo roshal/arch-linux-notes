@@ -63,6 +63,10 @@ pactl set-card-profile bluez_card.70_26_05_DD_FD_DD headset_head_unit
 
 exit
 
+pactl load-module module-loopback
+
+exit
+
 ### runtime configure
 pacmd
 
