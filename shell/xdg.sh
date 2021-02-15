@@ -30,3 +30,5 @@ exit
 # # https://wiki.archlinux.org/index.php/Xdg-utils#xdg-settings
 
 xdg-settings get default-web-browser
+
+xdg-settings set default-web-browser chromium.desktop
