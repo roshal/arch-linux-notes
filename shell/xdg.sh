@@ -32,3 +32,5 @@ exit
 xdg-settings get default-web-browser
 
 xdg-settings set default-web-browser chromium.desktop
+
+xdg-settings set default-url-scheme-handler irc xchat.desktop
