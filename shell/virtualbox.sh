@@ -4,6 +4,8 @@ exit
 pacman --sync virtualbox
 pacman --sync virtualbox-host-modules-arch
 
+lsmod | grep vboxdrv
+
 modprobe vboxdrv
 
 # # https://developer.microsoft.com/en-us/windows/downloads/virtual-machines

@@ -1,6 +1,8 @@
 
 exit
 
+lsmod | grep v4l2loopback
+
 modprobe v4l2loopback
 
 v4l2-ctl --list-devices

@@ -76,4 +76,6 @@ sudo wg
 
 exit
 
+lsmod | grep wireguard
+
 modprobe wireguard
