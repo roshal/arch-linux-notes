@@ -1,6 +1,8 @@
 
 exit
 
+# # https://wiki.archlinux.org/index.php/Webcam_setup
+
 lsmod | grep v4l2loopback
 
 modprobe v4l2loopback
