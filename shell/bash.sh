@@ -1,6 +1,8 @@
 
 exit
 
+:
+
 man bash
 
 echo ${HOME%/*}
@@ -18,7 +20,7 @@ type bash
 
 ps -p $$
 
-exit
+:
 
 # # https://riptutorial.com/bash/example/4686/bypass-an-alias
 # # https://www.cyberciti.biz/faq/bash-bypass-alias-command-on-linux-macos-unix/
@@ -31,23 +33,23 @@ alias man='\man'
 alias man='m\an'
 alias man='ma\n'
 
-exit
+:
 
 ### remove all alias
 unalias -a
 
-exit
+:
 
 cat << $ > handle.sh
 echo "\${1}/*" "\${2}"
 find "\${1}" -type f -exec realpath --relative-to "\${1}" {} +
 $
 
-exit
+:
 
 mkdir -p zero/unit
 
-exit
+:
 
 echo 0 > /dev/null
 echo $_
@@ -57,13 +59,13 @@ echo 0 > /dev/null
 echo !$
 ### /dev/null
 
-exit
+:
 
 echo az
 
 !echo
 
-exit
+:
 
 ### if empty echo plus
 echo ${parameter++}
@@ -71,7 +73,15 @@ echo ${parameter++}
 ### if empty echo dash
 echo ${parameter--}
 
-exit
+:
+
+### trim one leading zero
+new=${old#0}
+
+### trim all leading zeros
+new=${old##+(0)}
+
+:
 
 ### substring starting at offset
 # ${parameter:offset}
