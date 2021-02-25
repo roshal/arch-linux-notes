@@ -65,6 +65,14 @@ echo az
 
 exit
 
+### if empty echo plus
+echo ${parameter++}
+
+### if empty echo dash
+echo ${parameter--}
+
+exit
+
 ### substring starting at offset
 # ${parameter:offset}
 
