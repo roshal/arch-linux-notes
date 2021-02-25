@@ -9,11 +9,15 @@ sudo pacman --sync pulsemixer
 
 exit
 
+sudo systemctl status bluetooth.service
+
 sudo systemctl start bluetooth.service
 
 exit
 
-sudo systemctl --user restart pulseaudio
+systemctl --user status pulseaudio
+
+systemctl --user restart pulseaudio
 
 exit
 

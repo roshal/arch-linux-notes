@@ -15,6 +15,8 @@ bluetoothctl
 
 exit
 
+sudo systemctl status bluetooth.service
+
 sudo systemctl start bluetooth.service
 
 sudo systemctl restart bluetooth.service

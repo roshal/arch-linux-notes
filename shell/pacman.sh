@@ -63,6 +63,9 @@ pacman -Ql
 ### query foreign
 pacman -Qm
 
+### query foreign unrequired
+pacman -Qmt
+
 ### query file owns
 pacman -Qo ..
 
