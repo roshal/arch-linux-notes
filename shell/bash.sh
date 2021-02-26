@@ -83,44 +83,74 @@ new=${old##+(0)}
 
 :
 
+parameter=abcdefghijklmnopqrstuvwxyz
+
 ### substring starting at offset
-# ${parameter:offset}
+#### ${parameter:offset}
+echo ${parameter:1}
+### bcdefghijklmnopqrstuvwxyz
 
 ### substring of length "length" starting at offset
-# ${parameter:offset:length}
+#### ${parameter:offset:length}
+echo ${parameter:1:1}
+### b
 
 ### length of parameter
-# ${#parameter}
+#### ${#parameter}
+echo ${#parameter}
+### 26
 
 ### replace the first occurrence of pattern with string
-# ${parameter/pattern/string}
+#### ${parameter/pattern/string}
+echo ${parameter/abcdefghijklm/__}
+### _____________nopqrstuvwxyz
 
 ### replace all occurrences of pattern with string
-# ${parameter//pattern/string}
+#### ${parameter//pattern/string}
+echo ${parameter//abcdefghijklm/__}
+### _____________nopqrstuvwxyz
 
 ### replace pattern with string if pattern is at the beginning
-# ${parameter/#pattern/string}
+#### ${parameter/#pattern/string}
+echo ${parameter/#abcdefghijklm/__}
+### _____________nopqrstuvwxyz
 
 ### replace pattern with string if pattern is at the ending
-# ${parameter/%pattern/string}
+#### ${parameter/%pattern/string}
+echo ${parameter/%nopqrstuvwxyz/__}
+### abcdefghijklm_____________
 
 ### remove shortest match of pattern from beginning of parameter
-# ${parameter#pattern}
+#### ${parameter#pattern}
+echo ${parameter#abcdefghijklm}
+### _____________nopqrstuvwxyz
 
 ### remove longest match of pattern from beginning of parameter
-# ${parameter##pattern}
+#### ${parameter##pattern}
+echo ${parameter##abcdefghijklm}
+### _____________nopqrstuvwxyz
 
 ### remove shortest match of pattern from end of parameter
-# ${parameter%pattern}
+#### ${parameter%pattern}
+echo ${parameter%nopqrstuvwxyz}
+### abcdefghijklm_____________
 
 ### remove longest match of pattern from end of parameter
-# ${parameter%%pattern}
+#### ${parameter%%pattern}
+echo ${parameter%%nopqrstuvwxyz}
+### abcdefghijklm_____________
 
 ### expand to word if parameter unset/undefined
-# ${parameter:-word}
+#### ${parameter:-word}
+echo ${parameter:-zero}
+### abcdefghijklmnopqrstuvwxyz
 
 ### expand to word if parameter unset/undefined and set parameter
-# ${parameter:=word}
+#### ${parameter:=word}
+echo ${parameter:=zero}
+### abcdefghijklmnopqrstuvwxyz
 
 ### expand to word if parameter set/defined
-# ${parameter:+word}
+#### ${parameter:+word}
+echo ${parameter:+zero}
+### zero
