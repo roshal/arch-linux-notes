@@ -32,8 +32,8 @@ git merge --abort
 git push --no-verify origin HEAD
 git push -n --no-verify
 
-git push origin         :<branch>
-git push origin --delete <branch>
+git push origin         :branch
+git push origin --delete branch
 git push origin :old-name new-name
 
 git reset --mixed

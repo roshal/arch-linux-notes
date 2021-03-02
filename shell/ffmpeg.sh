@@ -27,7 +27,7 @@ do ffmpeg \
 	-i "${value}.mka" \
 	-map 0:v:0 \
 	-map 1:a:0 \
-	-c copy media/${value}.mp4
+	-c copy "media/${value}.mp4"
 done
 
 for value in $(seq -f %02g 0 9)
@@ -36,5 +36,5 @@ do ffmpeg \
 	-i "${value}.mka" \
 	-map 0:v:0 \
 	-map 1:a:0 \
-	-c copy media/${value}.mp4
+	-c copy "media/${value}.mp4"
 done

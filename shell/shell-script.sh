@@ -8,38 +8,38 @@ exit
 # # https://wiki.bash-hackers.org/scripting/posparams#intro
 
 ### function name
-echo $FUNCNAME
+echo "${FUNCNAME[@]}"
 
 ### number of arguments
 echo $#
 
 ### all positional arguments except zero with expansion
-echo $*
-echo $@
+echo "$*"
+echo "$@"
 
 ### last argument
-echo $_
+echo "$_"
 
 ### return status
 echo $?
 
 ### shell or script name
-echo $0
+echo "$0"
 
 ### positional arguments or arguments
-echo $0
-echo $1
-echo $2
-echo $3
-echo $4
-echo $5
-echo $6
-echo $7
-echo $8
-echo $9
+echo "$0"
+echo "$1"
+echo "$2"
+echo "$3"
+echo "$4"
+echo "$5"
+echo "$6"
+echo "$7"
+echo "$8"
+echo "$9"
 
 ### all subsequent arguments must be in curly braces
-echo ${10}
+echo "${10}"
 
 :
 

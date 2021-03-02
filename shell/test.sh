@@ -1,4 +1,6 @@
 
+# shellcheck disable=SC2050
+
 exit
 
 man test
@@ -10,10 +12,10 @@ test -n az && echo true
 test -z '' && echo true
 
 test -v $# && echo true
-test -v $@ && echo true
-
 test -v $$ || echo true
-test -v $_ || echo true
+
+test -v "$@" && echo true
+test -v "$_" || echo true
 
 [[ 'abc' =~ 'b' ]] && echo true
 [[ 'az' != 'za' ]] && echo true

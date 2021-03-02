@@ -3,10 +3,10 @@ exit
 
 # # https://snapcraft.io/docs/installing-snap-on-arch-linux
 
-cd /-/aur
+cd /-/aur || return
 
 git clone https://aur.archlinux.org/snapd.git
-cd snapd
+cd snapd || return
 makepkg -si
 
 sudo systemctl enable --now snapd.socket

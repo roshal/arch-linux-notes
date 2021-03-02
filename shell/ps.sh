@@ -1,4 +1,6 @@
 
+# shellcheck disable=SC2009
+
 exit
 
 ps ax | grep pts

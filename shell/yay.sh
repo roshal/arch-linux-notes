@@ -9,3 +9,8 @@ exit
 
 yay --sync --clean
 yay -Sc
+
+exit
+
+yay --sync --clean
+yay -Sc

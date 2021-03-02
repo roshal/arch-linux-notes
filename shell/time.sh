@@ -16,6 +16,6 @@ done
 
 :
 
-while value=$(expr 1000000 - $(date +%N) / 1000)
+while value=$((1000000 - 10#$(date +%N) / 1000))
 do echo "${value}" && usleep "${value}"
 done

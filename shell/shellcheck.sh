@@ -1,6 +1,6 @@
 
 exit
 
-find . -name \*.sh | xargs shellcheck
+find . -name \*.sh -print0 | xargs --null shellcheck
 
-find . -name \*.sh | xargs shellcheck --exclude SC1090,SC2148
+find . -name \*.sh -print0 | xargs --null shellcheck --exclude SC1090,SC2148

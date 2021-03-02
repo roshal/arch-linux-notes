@@ -1,4 +1,6 @@
 
+# shellcheck disable=SC1010,SC2016,SC2116
+
 exit
 
 git filter-branch --force --prune-empty --index-filter "$(

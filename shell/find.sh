@@ -20,3 +20,9 @@ find . -type f -exec grep data {} +
 
 ### fast parallelism
 find . -type f -print0 | xargs -0 grep data
+
+exit
+
+find . -name \*.js -print0 | xargs --null wc -l | sort -g
+
+find . -name \*.js | grep -v node_modules | xargs wc -l | sort -g

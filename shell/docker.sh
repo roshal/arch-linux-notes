@@ -17,7 +17,7 @@ docker system prune --volumes
 
 exit
 
-sudo kill -SIGHUP $(pidof dockerd)
+sudo kill -SIGHUP "$(pidof dockerd)"
 
 journalctl -u docker.service
 

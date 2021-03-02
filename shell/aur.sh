@@ -1,7 +1,7 @@
 
 exit
 
-cd /-/aur
+cd /-/aur || return
 
 makepkg -si
 

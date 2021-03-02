@@ -1,9 +1,12 @@
 
+
+# shellcheck disable=SC1035
+
 exit
 
 apropos docker
 
-!!:s^<old>^<new>
+!!:s^old^new
 
 !l
 !ls
