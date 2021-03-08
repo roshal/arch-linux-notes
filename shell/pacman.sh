@@ -39,9 +39,13 @@ pacman --sync -c --clean
 pacman --sync -u --sysupgrade
 pacman --sync -y --refresh
 
+exit
+
 ### pacman-key
 
 pacman-key --refresh-keys
+
+exit
 
 ### commands
 
@@ -51,23 +55,18 @@ pacman -D --asdeps ..
 ### mark packages as explicitly installed
 pacman -D --asexplicit ..
 
+exit
+
+### query packages
+
 ### query orphans
 pacman -Qdqt
-
-### query check files
-pacman -Qkq
-
-### query files
-pacman -Ql
-
-### query foreign
-pacman -Qm
 
 ### query foreign unrequired
 pacman -Qmt
 
-### query file owns
-pacman -Qo ..
+### query foreign
+pacman -Qm
 
 ### query unrequired
 pacman -Qt
@@ -75,11 +74,32 @@ pacman -Qt
 ### query upgrades
 pacman -Qu
 
+exit
+
+### query files
+
+### query check files
+pacman -Qkq
+
+### query files
+pacman -Ql
+
+### query file owns
+pacman -Qo ..
+
+exit
+
+### remove
+
 ### remove recursive with configs
 pacman -Rns ..
 
 ### remove orphans
-pacman -Rns "$(pacman -Qdqt)"
+pacman -Rns $(pacman -Qdqt)
+
+exit
+
+### refresh
 
 ### refresh and sysupgrade
 pacman -Syu
