@@ -59,14 +59,11 @@ exit
 
 ### query packages
 
-### query orphans
-pacman -Qdqt
-
-### query foreign unrequired
-pacman -Qmt
-
 ### query foreign
 pacman -Qm
+
+### query native
+pacman -Qn
 
 ### query unrequired
 pacman -Qt
@@ -74,18 +71,24 @@ pacman -Qt
 ### query upgrades
 pacman -Qu
 
+### query foreign unrequired
+pacman -Qmt
+
+### query orphans
+pacman -Qdqt
+
 exit
 
 ### query files
-
-### query check files
-pacman -Qkq
 
 ### query files
 pacman -Ql
 
 ### query file owns
 pacman -Qo ..
+
+### query check files
+pacman -Qkq
 
 exit
 
