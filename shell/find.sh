@@ -1,6 +1,11 @@
 
 exit
 
+### as ls
+find . -ls
+
+exit
+
 find . -name name
 find . -name name 2>/dev/null
 
