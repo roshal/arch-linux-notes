@@ -47,6 +47,19 @@ pacman-key --refresh-keys
 
 exit
 
+### pactree
+
+### show dependencies
+pactree --unique ..
+
+### list packages that depend on the named package
+pactree --reverse ..
+
+### show dependencies with no duplicates
+pactree --unique ..
+
+exit
+
 ### commands
 
 ### mark packages as non-explicitly installed
@@ -102,7 +115,10 @@ pacman -Rns $(pacman -Qdqt)
 
 exit
 
-### refresh
+### sync
 
 ### refresh and sysupgrade
 pacman -Syu
+
+### refresh and sysupgrade
+pacman -Syu $(pacman -Qmq)
