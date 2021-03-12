@@ -5,7 +5,7 @@ exit
 
 man bash
 
-echo ${HOME%/*}
+echo "${HOME%/*}"
 
 dirname "${HOME}"
 
@@ -52,7 +52,7 @@ mkdir -p zero/unit
 :
 
 echo 0 > /dev/null
-echo $_
+echo "$_"
 ### 0
 
 echo 0 > /dev/null
@@ -63,25 +63,29 @@ echo !$
 
 echo az
 
-!echo
+! echo
 
 :
 
 ### if empty echo plus
-echo ${parameter++}
+echo "${parameter++}"
 
 ### if empty echo dash
-echo ${parameter--}
+echo "${parameter--}"
 
 :
+
+parameter=00
 
 ### trim one leading zero
-new=${old#0}
+echo ${parameter#0}
 
 ### trim all leading zeros
-new=${old##+(0)}
+echo ${parameter##+(0)}
 
 :
+
+### parameter expansion
 
 parameter=abcdefghijklmnopqrstuvwxyz
 
@@ -140,17 +144,46 @@ echo ${parameter%nopqrstuvwxyz}
 echo ${parameter%%nopqrstuvwxyz}
 ### abcdefghijklm_____________
 
-### expand to word if parameter unset/undefined
+### expansion with colon
+
+### expand to word if parameter is set or defined
+#### ${parameter:+word}
+echo ${parameter:+zero}
+### zero
+
+### expand to word if parameter is unset or null
 #### ${parameter:-word}
 echo ${parameter:-zero}
 ### abcdefghijklmnopqrstuvwxyz
 
-### expand to word if parameter unset/undefined and set parameter
+### expand to word if parameter is unset or null and set parameter
 #### ${parameter:=word}
 echo ${parameter:=zero}
 ### abcdefghijklmnopqrstuvwxyz
 
-### expand to word if parameter set/defined
-#### ${parameter:+word}
-echo ${parameter:+zero}
+### expand to word if parameter is unset or null and display error
+#### ${parameter:?word}
+echo ${parameter:?zero}
+### abcdefghijklmnopqrstuvwxyz
+
+### expansion without colon
+
+### expand to word if parameter is defined
+#### ${parameter+word}
+echo ${parameter+zero}
 ### zero
+
+### expand to word if parameter is unset
+#### ${parameter-word}
+echo ${parameter-zero}
+### abcdefghijklmnopqrstuvwxyz
+
+### expand to word if parameter is unset and set parameter
+#### ${parameter=word}
+echo ${parameter=zero}
+### abcdefghijklmnopqrstuvwxyz
+
+### expand to word if parameter is unset and display error
+#### ${parameter?word}
+echo ${parameter?zero}
+### abcdefghijklmnopqrstuvwxyz
