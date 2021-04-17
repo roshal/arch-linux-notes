@@ -61,8 +61,8 @@ exit
 
 # # https://wiki.archlinux.org/index.php/WireGuard#Site-to-point
 
-sudo sed --in-place '/^#net\.ipv4\.ip_forward=1$/s/.//' /etc/sysctl.conf
-sudo sed --in-place '/^#net\.ipv6\.conf\.all\.forwarding=1$/s/.//' /etc/sysctl.conf
+sudo sed --in-place '/^#net\.ipv4\.ip_forward=1$/s/.//' -- /etc/sysctl.conf
+sudo sed --in-place '/^#net\.ipv6\.conf\.all\.forwarding=1$/s/.//' -- /etc/sysctl.conf
 
 sudo sysctl -p
 

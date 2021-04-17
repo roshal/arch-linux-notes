@@ -21,7 +21,7 @@ ssh-copy-id server.roshal.online
 
 # # https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04#step-five-—-disable-password-authentication-recommended
 
-sed --in-place '/^PasswordAuthentication yes$/s/...$/no/' /etc/ssh/sshd_config
+sed --in-place '/^PasswordAuthentication yes$/s/...$/no/' -- /etc/ssh/sshd_config
 
 # # ChallengeResponseAuthentication no
 # # PasswordAuthentication no

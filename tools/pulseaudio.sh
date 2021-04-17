@@ -51,7 +51,7 @@ pulseaudio --check -v
 exit
 
 # # https://wiki.archlinux.org/index.php/Bluetooth_headset#Setting_up_auto_connection
-sudo sed '/^#AutoEnable\>/s/false/true/;/^#AutoEnable\>/s/./ /' /etc/bluetooth/main.conf --in-place
+sudo sed --in-place '/^#AutoEnable\>/s/false/true/;/^#AutoEnable\>/s/./ /' -- /etc/bluetooth/main.conf
 
 exit
 
