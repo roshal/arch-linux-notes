@@ -6,4 +6,8 @@ exit
 ### opens despite mime settings of default applications
 ### opens from chromium
 ### opens from telegram
-pacman --sync pantheon-files
+sudo pacman --sync -- pantheon-files
+
+exit
+
+sudo pacman --sync -- dvtm
