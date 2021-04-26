@@ -7,6 +7,8 @@ exit
 
 sudo tee --append /etc/exports <<< '/-/nfs 192.168.0.1/24(insecure,crossmnt,no_subtree_check)'
 
+cat /var/lib/nfs/etab
+
 sudo exportfs -arv
 
 systemctl status nfs-server.service
