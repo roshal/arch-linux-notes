@@ -1,8 +1,8 @@
 
 exit
 
-pacman --sync virtualbox
-pacman --sync virtualbox-host-modules-arch
+sudo pacman --sync virtualbox
+sudo pacman --sync virtualbox-host-modules-arch
 
 lsmod | grep vboxdrv
 
