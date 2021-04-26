@@ -52,7 +52,7 @@ mkdir -p zero/unit
 :
 
 echo 0 > /dev/null
-echo "$_"
+echo "${_}"
 ### 0
 
 echo 0 > /dev/null
