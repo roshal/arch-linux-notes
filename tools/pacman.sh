@@ -90,6 +90,9 @@ pacman -Qmt
 ### query orphans
 pacman -Qdqt
 
+### query optionals
+pacman -Qdqtt
+
 exit
 
 ### query files
@@ -112,6 +115,9 @@ pacman -Rns ..
 
 ### remove orphans
 pacman -Rns $(pacman -Qdqt)
+
+### remove optionals
+pacman -Rns $(pacman -Qdqtt)
 
 exit
 
